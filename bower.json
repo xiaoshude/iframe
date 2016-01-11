@@ -1,0 +1,15 @@
+{
+  "name": "ifram",
+  "version": "0.0.0",
+  "authors": [
+    "xiaoshude <fzyde123@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>院校库|顺顺留学</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <style>
+        #shunshun_school body{
+            font-size: 13px;
+        }
+        #shunshun_school input, #shunshun_school select,#shunshun_school button{
+            height: 25px;
+        }
+        #shunshun_school button {
+            line-height: 25px;
+            padding-top: 0;
+            font-size: 13px;
+        }
+        #shunshun_school form {
+            margin: 10px 0;
+        }
+        #shunshun_school form label {
+            margin: 0 6px 0 10px;
+        }
+        #shunshun_school input[placeholder='关键字'] {
+            margin:0 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid" id="shunshun_school">
+        <form target="_blank" class="form-inline" action="http://wecenter:18080/college/us/" method="get">
+            <div class="form-group">
+                <label for="">美国大学</label>
+                <select class="form-control" name="inputRankCatagory">
+                    <option value="2015usnews美国大学排名">2015usnews美国大学排名</option>
+                    <option value="2015usnews世界大学排名">2015usnews世界大学排名</option>
+                    <option value="2015泰晤士排名">2015泰晤士排名</option>
+                    <option value="2015上海交大世界排名">2015上海交大世界排名</option>
+                    <option value="2015QS世界大学排名">2015QS世界大学排名</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">类型</label>
+                <select class="form-control" name="schoolCatagory" id="">
+                    <option value="">不限</option>
+                    <option value="私立大学">私立大学</option>
+                    <option value="公立大学">公立大学</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">接受考试</label>
+                <select class="form-control" name="typeOfTest" id="">
+                    <option value="">不限</option>
+                    <option value="不用托福">不用托福</option>
+                    <option value="不用SAT">不用SAT</option>
+                    <option value="接受雅思">接受雅思</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">春季入学</label>
+                <select class="form-control" name="isAcceptSpringSemester" id="">
+                    <option value="">不限</option>
+                    <option value="接受春季入学">接受春季入学</option>
+                    <option value="不接受春季入学">不接受春季入学</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">提前申请</label>
+                <select class="form-control" name="isEaApply" id="">
+                    <option value="">不限</option>
+                    <option value="有EA申请">有EA申请</option>
+                    <option value="有ED申请">有ED申请</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input name="InputSchoolKeyword" class="form-control" placeholder="关键字" type="text"/>
+            </div>
+            <button type="submit" class="btn btn-info">
+                搜索
+            </button>
+        </form>
+        <form target="_blank" class="form-inline" action="http://wecenter:18080/highschool/us/" method="get">
+            <div class="form-group">
+                <label for="">美国高中</label>
+                <select class="form-control" name="inputSchoolArea">
+                    <option value="所有区域">所有区域</option>
+                    <option value="西部">西部</option>
+                    <option value="新英格兰">新英格兰</option>
+                    <option value="大西洋沿岸中部">大西洋沿岸中部</option>
+                    <option value="南部">南部</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">类型</label>
+                <select class="form-control" name="schoolCatagory" id="">
+                    <option value="">不限</option>
+                    <option value="私立寄宿">私立寄宿</option>
+                    <option value="私立走读">私立走读</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">接受考试</label>
+                <select class="form-control" name="typeOfTest" id="">
+                    <option value="">不限</option>
+                    <option value="不用托福">不用托福</option>
+                    <option value="不用SSAT">不用SSAT</option>
+                    <option value="不用面试">不用面试</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">春季入学</label>
+                <select class="form-control" name="isAcceptSpringSemester" id="">
+                    <option value="">不限</option>
+                    <option value="接受春季入学">接受春季入学</option>
+                    <option value="不接受春季入学">不接受春季入学</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">ESL</label>
+                <select class="form-control" name="isEslProvided" id="">
+                    <option value="">不限</option>
+                    <option value="提供ESL">提供ESL</option>
+                    <option value="不提供ESL">不提供ESL</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input name="InputSchoolKeyword" class="form-control" placeholder="关键字" type="text"/>
+            </div>
+            <button type="submit" class="btn btn-info">
+                搜索
+            </button>
+        </form>
+        <form target="_blank" class="form-inline" action="http://wecenter:18080/college/uk/" method="get">
+            <div class="form-group">
+                <label for="">英国大学</label>
+                <select class="form-control" name="inputRankCatagory">
+                    <option value="2015泰晤士英国大学综合排名">2015泰晤士英国大学综合排名</option>
+                    <option value="2014泰晤士英国大学综合排名">2014泰晤士英国大学综合排名</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input name="InputSchoolKeyword" class="form-control" placeholder="关键字" type="text"/>
+            </div>
+            <button type="submit" class="btn btn-info">
+                搜索
+            </button>
+        </form>
+    </div>
+</body>
+</html>
