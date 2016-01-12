@@ -28,6 +28,17 @@
             padding-bottom: 0;
             padding-left: 9px;
         }
+        #shunshun_school select {
+            width: 89px;
+        }
+
+        #shunshun_school input {
+            width: 128px;
+        }
+
+        #shunshun_school .form-group:first-child select {
+            width: 219px;
+        }
 
         #shunshun_school option {
             line-height: 25px;
@@ -38,8 +49,12 @@
         #shunshun_school form label {
             margin: 0 6px 0 10px;
         }
-        #shunshun_school input[placeholder='关键字'] {
+        #shunshun_school input[name="InputSchoolKeyword"] {
             margin:0 10px;
+        }
+
+        #shunshun_school .label-custom {
+            padding: 0 14px;
         }
 
     </style>
@@ -84,14 +99,6 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="">春季入学</label>
-                <select class="form-control" name="isAcceptSpringSemester" id="">
-                    <option value="">不限</option>
-                    <option value="接受春季入学">接受春季入学</option>
-                    <option value="不接受春季入学">不接受春季入学</option>
-                </select>
-            </div>
-            <div class="form-group">
                 <label for="">提前申请</label>
                 <select class="form-control" name="isEaApply" id="">
                     <option value="">不限</option>
@@ -100,7 +107,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <input name="InputSchoolKeyword" class="form-control" placeholder="关键字" type="text"/>
+                <input name="InputSchoolKeyword" class="form-control" placeholder="搜索美国大学" type="text"/>
             </div>
             <button type="submit" class="btn btn-info">
                 搜索
@@ -135,15 +142,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="">春季入学</label>
-                <select class="form-control" name="isAcceptSpringSemester" id="">
-                    <option value="">不限</option>
-                    <option value="接受春季入学">接受春季入学</option>
-                    <option value="不接受春季入学">不接受春季入学</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="">ESL</label>
+                <label class="label-custom" for="">ESL</label>
                 <select class="form-control" name="isEslProvided" id="">
                     <option value="">不限</option>
                     <option value="提供ESL">提供ESL</option>
@@ -151,7 +150,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <input name="InputSchoolKeyword" class="form-control" placeholder="关键字" type="text"/>
+                <input name="InputSchoolKeyword" class="form-control" placeholder="搜索美国高中" type="text"/>
             </div>
             <button type="submit" class="btn btn-info">
                 搜索
@@ -166,7 +165,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <input name="InputSchoolKeyword" class="form-control" placeholder="关键字" type="text"/>
+                <input name="InputSchoolKeyword" class="form-control" placeholder="搜索英国大学" type="text"/>
             </div>
             <button type="submit" class="btn btn-info">
                 搜索
